@@ -75,7 +75,7 @@ _cpu="$2"
     export OPENSSL_INCLUDE="${OPENSSL_PATH}/include"
     export OPENSSL_LIBPATH="${OPENSSL_PATH}"
     export OPENSSL_LIBS='-lssl -lcrypto'
-    [ "$(echo "${CURL_VER_}" | cut -c -5)" = '7.56.' ] && options="${options}-winssl"
+    [ "$(echo "${CURL_VER_}" | cut -c -5)" != '7.55.' ] || options="${options}-winssl"
   else
     options="${options}-winssl"
   fi
