@@ -5,6 +5,8 @@
 
 # Automated, reproducible, transparent, Windows builds for [curl](https://curl.haxx.se/), [nghttp2](https://nghttp2.org/), [libssh2](https://libssh2.org/) and [OpenSSL 1.1](https://www.openssl.org/)
 
+  - Your donation is welcome to support these builds:
+    [![PayPal](https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2DZM6WAGRJWT6)
   - Packaging aims to follow popular binary releases found on the internet.
   - Both x86 and x64 packages are built using the same process.
   - Standalone `curl.exe` (only [`msvcrt.dll`](https://en.wikipedia.org/wiki/Microsoft_Windows_library_files#MSVCRT.DLL.2C_MSVCPP.DLL_and_CRTDLL.DLL) is [required](https://blogs.msdn.microsoft.com/oldnewthing/20140411-00/?p=1273)).
@@ -42,7 +44,7 @@
     with fair confidence of getting accepted.
   - curl/libcurl 7.56.0 and upper versions are built in MultiSSL mode, with
     both OpenSSL and [WinSSL](https://en.wikipedia.org/wiki/Cryptographic_Service_Provider)
-    available as SSL back ends.
+    available as SSL backends.
   - Optional support for [C-ares](https://c-ares.haxx.se/), [librtmp](https://rtmpdump.mplayerhq.hu/).
   - Generated binaries are uploaded to [VirusTotal](https://www.virustotal.com/).
   - If you need a download with a stable checksum, link to the penultimate
@@ -70,10 +72,6 @@
     - Trusted timestamp included in the signature breaks reproducibility. This
       is an optional feature, though it appears to be good practice to include
       it.
-
-# Please donate to support maintaining these builds
-
-  [![PayPal](https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2DZM6WAGRJWT6)
 
 # Binary package downloads
 
