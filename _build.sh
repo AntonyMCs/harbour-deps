@@ -88,15 +88,15 @@ for _cpu in '32' '64'; do
 
   which osslsigncode > /dev/null 2>&1 || unset CODESIGN_KEY
 
-  ./zlib.sh         "${ZLIB_VER_}" "${_cpu}"
-  ./libidn2.sh   "${LIBIDN2_VER_}" "${_cpu}"
-  ./c-ares.sh      "${CARES_VER_}" "${_cpu}"
-  ./nghttp2.sh   "${NGHTTP2_VER_}" "${_cpu}"
-  ./libressl.sh "${LIBRESSL_VER_}" "${_cpu}"
-  ./openssl.sh   "${OPENSSL_VER_}" "${_cpu}"
-  ./librtmp.sh   "${LIBRTMP_VER_}" "${_cpu}"
-  ./libssh2.sh   "${LIBSSH2_VER_}" "${_cpu}"
-  ./curl.sh         "${CURL_VER_}" "${_cpu}"
+  ./pkg/zlib.sh         "${ZLIB_VER_}" "${_cpu}"
+  ./pkg/libidn2.sh   "${LIBIDN2_VER_}" "${_cpu}"
+  ./pkg/c-ares.sh      "${CARES_VER_}" "${_cpu}"
+  ./pkg/nghttp2.sh   "${NGHTTP2_VER_}" "${_cpu}"
+  ./pkg/libressl.sh "${LIBRESSL_VER_}" "${_cpu}"
+  ./pkg/openssl.sh   "${OPENSSL_VER_}" "${_cpu}"
+  ./pkg/librtmp.sh   "${LIBRTMP_VER_}" "${_cpu}"
+  ./pkg/libssh2.sh   "${LIBSSH2_VER_}" "${_cpu}"
+  ./pkg/curl.sh         "${CURL_VER_}" "${_cpu}"
 done
 
 ls -l ./*-*-mingw*.*
